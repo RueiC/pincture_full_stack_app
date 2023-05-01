@@ -15,7 +15,7 @@ import { Session } from 'next-auth/core/types';
 interface Props {
   pinId: string;
   pin: PinDetail;
-  comments: CommentType | null;
+  comments: CommentType[] | null;
   session: Session | null;
 }
 
