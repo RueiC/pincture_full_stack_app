@@ -1,4 +1,4 @@
-# Next.js ｜ Pincture - 圖片分享收藏平台
+# Pincture Full-stack App ｜圖片分享收藏平台
 
 Website Demo: https://pincture-full-stack-app.vercel.app
 
