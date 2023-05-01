@@ -32,14 +32,16 @@ const Comment = ({ pinId, comment, setDeletedItem, session }: CommentProps) => {
         />
         <div className='flex flex-col gap-[4px]'>
           <div className='flex items-end justify-start gap-[8px]'>
-            <p className='font-medium cursor-pointer text-[14px] text-text-2'>
+            <p className='font-bold font-sans cursor-pointer text-[14px] text-text-2'>
               {comment.postedBy.name}
             </p>
-            <span className='text-[10px] opacity-50'>
+            <span className='text-[10px] font-regular font-sans opacity-50'>
               {moment(comment.createdAt).format('YY-MM-DD')}
             </span>
           </div>
-          <p className='text-[14px] text-text-2'>{comment.comment}</p>
+          <p className='text-[14px] text-text-2 font-regular font-sans'>
+            {comment.comment}
+          </p>
         </div>
       </div>
 

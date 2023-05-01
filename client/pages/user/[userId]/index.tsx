@@ -73,11 +73,11 @@ const UserProfile = ({ user, postedPins, savedPins, session }: Props) => {
           height={120}
         />
 
-        <h1 className='font-bold text-[24px] text-center text-text-1'>
+        <h1 className='font-bold text-[24px] text-center text-text-1 font-sans'>
           {user?.name}
         </h1>
 
-        <span className='text-[14px]'>
+        <span className='text-[14px] font-medium font-sans'>
           @{user.email.substr(0, user.email.indexOf('@'))}
         </span>
       </div>

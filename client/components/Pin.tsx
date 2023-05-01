@@ -173,7 +173,9 @@ const Pin = ({ pin, session }: Props) => {
                 height={32}
               />
 
-              <p className='font-semibold text-[14px]'>{pin?.postedBy?.name}</p>
+              <p className='font-medium text-[14px] font-sans'>
+                {pin?.postedBy?.name}
+              </p>
             </div>
           </Link>
         )}

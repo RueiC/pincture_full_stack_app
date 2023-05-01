@@ -64,8 +64,10 @@ const PinDetailPage = ({ pinId, pin, comments, session }: Props) => {
 
         <div className='flex flex-col w-full gap-[24px]'>
           <div>
-            <h1 className='text-[32px] mb-[12px]'>{pin.title}</h1>
-            <p className='text-[14px]'>{pin.about}</p>
+            <h1 className='text-[32px] mb-[12px] font-sans font-bold'>
+              {pin.title}
+            </h1>
+            <p className='text-[14px] font-sans font-medium'>{pin.about}</p>
           </div>
 
           <Link
@@ -77,11 +79,13 @@ const PinDetailPage = ({ pinId, pin, comments, session }: Props) => {
               src={pin.postedBy.image}
               alt='profile'
             />
-            <span className='text-[14px] font-medium'>{pin.postedBy.name}</span>
+            <span className='text-[14px] font-medium font-sans'>
+              {pin.postedBy.name}
+            </span>
           </Link>
 
           <div className='flex flex-col gap-[24px]'>
-            <h2 className='text-[20px] flex items-center justify-start gap-[5px] font-medium'>
+            <h2 className='text-[20px] flex items-center justify-start gap-[5px] font-bold font-sans space-x-[1px]'>
               回應
             </h2>
             <CommentField pinId={pinId} comments={comments} session={session} />

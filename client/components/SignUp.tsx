@@ -72,11 +72,13 @@ const SignUp = () => {
       <img className='w-[115px] h-[53px]' src={images.pin} alt='logo' />
 
       <div>
-        <p className='text-[30px] font-bold mb-[14px]'>歡迎加入！</p>
+        <p className='text-[30px] font-bold mb-[14px] font-sans'>歡迎加入！</p>
         <div className='text-[10px]'>
-          <span className='opacity-50'>已經註冊了嗎？ </span>
+          <span className='font-sans opacity-50 font-regular'>
+            已經註冊了嗎？{' '}
+          </span>
           <span
-            className='cursor-pointer'
+            className='font-sans font-bold cursor-pointer'
             onClick={() => setInSignInForm(true)}
           >
             登入
@@ -87,7 +89,7 @@ const SignUp = () => {
       <div className='flex flex-col gap-[36px]'>
         <div>
           <input
-            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px]'
+            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px] font-medium font-sans'
             value={name}
             onChange={(e) => setName(e.target.value)}
             type='text'
@@ -99,7 +101,7 @@ const SignUp = () => {
         </div>
         <div>
           <input
-            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px]'
+            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px] font-medium font-sans'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type='email'
@@ -111,7 +113,7 @@ const SignUp = () => {
         </div>
         <div>
           <input
-            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px]'
+            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px] font-medium font-sans'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type='password'
@@ -121,15 +123,17 @@ const SignUp = () => {
             {/* {errors.password && touched?.password ? errors.password : ''} */}
           </p>
         </div>
-        <button className='bg-blue-gradient w-full rounded-[10px] py-[18px] bg-red-500 text-white hover:scale-105 transition-all duration-300 ease-in-out text-[14px]'>
+        <button className='bg-blue-gradient w-full rounded-[10px] py-[18px] bg-red-500 text-white hover:scale-105 transition-all duration-300 ease-in-out text-[14px] font-medium font-sans'>
           註冊
         </button>
 
         <div className='text-[10px]'>
-          <span className='opacity-50'>如果你註冊帳號，表示你同意我們的 </span>
-          <span className='cursor-pointer'>服務條款</span>
-          <span className='opacity-50'> 及 </span>
-          <span className='cursor-pointer'>隱私政策</span>
+          <span className='font-sans opacity-50 font-regular'>
+            如果你註冊帳號，表示你同意我們的{' '}
+          </span>
+          <span className='font-sans font-bold cursor-pointer'>服務條款</span>
+          <span className='font-sans opacity-50 font-regular'> 及 </span>
+          <span className='font-sans font-bold cursor-pointer'>隱私政策</span>
         </div>
       </div>
     </form>

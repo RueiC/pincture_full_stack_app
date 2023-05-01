@@ -252,7 +252,7 @@ const CreateNewPin = ({ session }: Props) => {
       <div className='flex flex-col items-start justify-start w-full h-full gap-[48px]'>
         <div className='w-full'>
           <input
-            className='outline-none text-[30px] font-bold border-gray-200 py-[0.5rem] border-b-2 w-full'
+            className='outline-none text-[30px] border-gray-200 py-[0.5rem] border-b-2 w-full font-bold font-sans'
             id='title'
             type='text'
             placeholder='新增標題'
@@ -268,7 +268,7 @@ const CreateNewPin = ({ session }: Props) => {
 
         <div className='w-full'>
           <input
-            className='outline-none text-[14px] font-medium border-gray-200 py-[0.5rem] border-b-2 w-full'
+            className='outline-none text-[14px] font-medium font-sans border-gray-200 py-[0.5rem] border-b-2 w-full'
             id='about'
             type='text'
             placeholder='讓所有人知道你的釘圖內容'
@@ -294,15 +294,17 @@ const CreateNewPin = ({ session }: Props) => {
             width={35}
             height={35}
           />
-          <p className='font-medium text-text-1'>{session?.user.name}</p>
+          <p className='font-medium font-bold text-text-1'>
+            {session?.user.name}
+          </p>
         </div>
 
         <div className='w-full'>
           <input
-            className='outline-none text-[14px] font-medium border-gray-200 py-[0.5rem] border-b-2 w-full'
+            className='outline-none text-[14px] font-medium border-gray-200 py-[0.5rem] border-b-2 w-full font-sans'
             id='destination'
             type='text'
-            placeholder='新增連結'
+            placeholder='新增目的地連結'
             autoComplete='off'
             value={values.destination}
             onBlur={handleBlur}
@@ -316,9 +318,9 @@ const CreateNewPin = ({ session }: Props) => {
         </div>
 
         <div className='flex flex-col gap-[12px]'>
-          <label className='text-[14px]'>選擇標籤</label>
+          <label className='text-[14px] font-medium font-sans'>選擇標籤</label>
           <select
-            className='outline-none w-[10rem] text-base border-gray-200 px-[1rem] py-[0.5rem] rounded-[0.5rem] text-[14px] cursor-pointer shadow-md text-text-1'
+            className='outline-none w-[10rem] text-base border-gray-200 px-[1rem] py-[0.5rem] rounded-[0.5rem] text-[14px] cursor-pointer shadow-md text-text-1 font-medium font-sans'
             id='category'
             value={values.category}
             onBlur={handleBlur}
@@ -343,7 +345,7 @@ const CreateNewPin = ({ session }: Props) => {
         </div>
 
         <button
-          className={`w-full ${submitState.style} px-[28px] py-[18px] rounded-[10px] text-white hover:scale-105 duration-200 ease-linear`}
+          className={`w-full ${submitState.style} px-[28px] py-[18px] rounded-[10px] text-white hover:scale-105 duration-200 ease-linear font-medium font-sans`}
           type='submit'
           disabled={submitState.state === 'uploading' ? true : false}
         >

@@ -65,11 +65,13 @@ const SignIn = () => {
       <img className='w-[115px] h-[53px]' src={images.pin} alt='logo' />
 
       <div>
-        <p className='text-[30px] font-bold mb-[14px]'>歡迎回來！</p>
+        <p className='text-[30px] font-bold mb-[14px] font-sans'>歡迎回來！</p>
         <div className='text-[10px]'>
-          <span className='opacity-50'>還沒註冊嗎？ </span>
+          <span className='font-sans opacity-50 font-regular'>
+            還沒註冊嗎？{' '}
+          </span>
           <span
-            className='cursor-pointer'
+            className='font-sans font-bold cursor-pointer'
             onClick={() => setInSignInForm(false)}
           >
             註冊
@@ -80,7 +82,7 @@ const SignIn = () => {
       <div className='flex flex-col gap-[36px]'>
         <div>
           <input
-            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px]'
+            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px] font-medium font-sans'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type='email'
@@ -92,7 +94,7 @@ const SignIn = () => {
         </div>
         <div>
           <input
-            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px]'
+            className='appearance-none bg-transparent w-full py-[12px] leading-tight focus:outline-none border-b-[0.5px] text-[14px] font-medium font-sans'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type='password'
@@ -103,15 +105,17 @@ const SignIn = () => {
           </p>
         </div>
         <button
-          className='bg-blue-gradient w-full rounded-[10px] py-[18px] bg-red-500 text-white hover:scale-105 transition-all duration-300 ease-in-out text-[14px]'
+          className='bg-blue-gradient w-full rounded-[10px] py-[18px] bg-red-500 text-white hover:scale-105 transition-all duration-300 ease-in-out text-[14px] font-medium font-sans'
           type='submit'
         >
           登入
         </button>
 
         <div className='text-[10px]'>
-          <span className='opacity-50'>忘記你的帳號密碼嗎？ </span>
-          <span className='cursor-pointer'>取得協助</span>
+          <span className='font-sans opacity-50 font-regular'>
+            忘記你的帳號密碼嗎？{' '}
+          </span>
+          <span className='font-sans font-bold cursor-pointer'>取得協助</span>
         </div>
       </div>
     </form>
