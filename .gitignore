@@ -14,5 +14,3 @@ out
 .env*.local
 .env
 
-# vercel
-.vercel
