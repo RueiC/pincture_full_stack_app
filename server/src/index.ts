@@ -27,7 +27,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://pincture-full-stack-app.vercel.app',
   }),
 );
 app.use(express.json());
