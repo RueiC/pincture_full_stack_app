@@ -1,5 +1,9 @@
 # Next.js ｜ Pincture - 圖片分享收藏平台
 
+Website Demo: https://pincture-full-stack-app.vercel.app
+
+<img width="700" alt="截圖 2023-02-19 23 02 42-min" src="https://user-images.githubusercontent.com/104335056/222036607-ca06dffc-f73f-4b12-800e-4221de3d07b7.png">
+
 ## API Doc
 
 ### GET /api/pins/:id
