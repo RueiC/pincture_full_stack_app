@@ -1,0 +1,11 @@
+Model Information:
+* title:	Idea lamp
+* source:	https://sketchfab.com/3d-models/idea-lamp-4c2b7bdc188e4c74b5392e4d967a1a0a
+* author:	Helsingr (https://sketchfab.com/helsingr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Idea lamp" (https://sketchfab.com/3d-models/idea-lamp-4c2b7bdc188e4c74b5392e4d967a1a0a) by Helsingr (https://sketchfab.com/helsingr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,50 @@
+{
+  "name": "next_js_Node_js_pincture_app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development next dev",
+    "build": "NODE_ENV=production next build",
+    "start": "NODE_ENV=production next start",
+    "lint": "next lint",
+    "export": "NODE_ENV=production next export"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.66.0",
+    "@react-three/fiber": "^8.12.2",
+    "@sanity/client": "^3.4.1",
+    "@sanity/image-url": "^1.0.1",
+    "axios": "^0.27.2",
+    "formik": "^2.2.9",
+    "moment": "^2.29.4",
+    "next": "^13.0.3",
+    "next-auth": "^4.22.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "react-masonry-css": "^1.0.16",
+    "react-toastify": "^9.0.8",
+    "three": "^0.151.3",
+    "uuid": "^9.0.0",
+    "validator": "^13.9.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.0.5",
+    "@types/node": "^15.0.1",
+    "@types/react": "^17.0.4",
+    "@types/uuid": "^8.3.4",
+    "@types/validator": "^13.7.15",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "autoprefixer": "^10.4.9",
+    "eslint": "^7.25.0",
+    "eslint-config-next": "^13.0.5",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.23.2",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.2.4"
+  }
+}
