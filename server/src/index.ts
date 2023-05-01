@@ -10,7 +10,7 @@ import userRoutes from './routes/userRoutes.js';
 import searchRoutes from './routes/searchRoutes.js';
 import registerRoutes from './routes/registerRoutes.js';
 
-const PORT = 3002;
+const PORT = 'https://pincture-api.vercel.app';
 
 declare global {
   namespace NodeJS {
