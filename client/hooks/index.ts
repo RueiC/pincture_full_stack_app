@@ -1,1 +1,1 @@
-export { default as useObjectURL } from './useObjectURL';=
+export { default as useObjectURL } from './useObjectURL';
